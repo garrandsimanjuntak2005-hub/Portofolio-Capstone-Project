@@ -1,45 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capstone Project - IBM Skillsbuild</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        :root {
+            --font-family: 'Arial', sans-serif;
         }
-        header, section, footer {
+
+        body {
+            font-family: var(--font-family);
+            margin: 0 0 60px; /* Add space at the bottom for the footer */
+            background: linear-gradient(to bottom, #f0f0f0, #e0e0e0); /* Subtle gray gradient background */
+        }
+
+        header,
+        section,
+        footer {
             padding: 20px;
         }
+
         header {
-            background-color: #f8f9fa;
+            /* Styles for the new header design with image */
+            color: #0d0c0c; /* Black text */
+            text-align: left;
+            padding: 40px 20px; /* More padding */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
+
+        .header-content {
+            flex-grow: 1;
+        }
+
+        .profile-picture {
+            border-radius: 50%; /* Makes the image a circle */
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-left: 40px;
+            border: 3px solid #010101;
+        }
+
+        h1, h2, h4 {
+            margin-top: 0;
+        }
+
         section {
             margin-top: 20px;
         }
+
         footer {
-            background-color: #f8f9fa;
             text-align: center;
-            position: fixed;
-            bottom: 0;
+            position: relative;
+            bottom: auto;
             width: 100%;
         }
+
         .social-icons {
             margin-top: 20px;
         }
+
         .social-icons a {
             color: black;
             font-size: 36px;
             margin-right: 15px;
         }
+
+        hr {
+            border: none;
+            border-top: 3px solid rgba(7, 6, 6, 0.5); /* A subtle black line */
+            margin: 0 20px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Garrand Malona Simanjuntak</h1>
+        <div class="header-content">
+            <h1>Garrand Malona Simanjuntak</h1>
+            <p>Undergraduate mathematics student with a strong interest in data analysis. Throughout my academic journey, I have actively participated in various organizations, committees, and competitions, reflecting my commitment to self-development and continuous learning. I am passionate about enhancing my soft skills, gaining professional experience, and contributing positively to the community.</p>
+        </div>
+        <img src="https://github.com/garrandsimanjuntak2005-hub/Portofolio-Capstone-Project/blob/main/Screenshot%202025-04-20%20153026.png?raw=true" alt="Garrand Malona Simanjuntak's Profile Picture" class="profile-picture">
     </header>
-    <section>
-        <h2>About Me</h2>
-        <p>Undergraduate mathematics student with a strong interest in data analysis. Throughout my academic journey, I have actively participated in various organizations, committees, and competitions, reflecting my commitment to self-development and continuous learning. I am passionate about enhancing my soft skills, gaining professional experience, and contributing positively to the community.</p>
+    <hr>
+    <section class="academic-list">
+        <h2>Academic</h2>
+        <ul>
+            <li>
+                <h4>Universitas Sebelas Maret | Mathematics</h4>
+                <p>July 2023 - Present</p>
+            </li>
+            <li>
+                <h4>SMAN 2 Kota Tangerang</h4>
+                <p>July 2020 - August 2023</p>
+            </li>
+        </ul>
     </section>
     <section class="experience-list">
         <h2>Experience</h2>
@@ -66,5 +124,8 @@
         <a href="https://www.linkedin.com/in/garrandsimanjuntak" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://www.instagram.com/garrandsimanjuntak/" target="_blank"><i class="fab fa-instagram"></i></a>
     </section>
+    <footer>
+        <p>&copy; Garrand Malona Simanjuntak - Universitas Sebelas Maret</p>
+    </footer>
 </body>
 </html>
